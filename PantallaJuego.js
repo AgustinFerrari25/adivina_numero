@@ -37,7 +37,7 @@ const PantallaJuego = () => {
     const numeroSecretoArray = numeroSecreto.split('');
     const numeroIngresadoArray = numeroIngresado.split('');
 
-    if (numeroIngresado === '' || numeroIngresado.length !=4) {
+    if (numeroIngresado === '' || numeroIngresado.length !=4 || isNaN(numeroIngresado)) {
         setInputError(true);
         return;
       }
@@ -87,6 +87,8 @@ const PantallaJuego = () => {
     } else if (intentos === 1) {
       setResultado(`Perdiste, Suerte en la proxima`);
       setJuegoTerminado(true);
+      setIntentos(intentos - 1);
+      
     } else {
       setIntentos(intentos - 1);
     }
