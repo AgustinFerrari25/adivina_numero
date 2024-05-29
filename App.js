@@ -10,7 +10,6 @@ const App=() =>{
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='PantallaInicio'>
-
         <Stack.Screen name='PantallaInicio' component={PantallaInicio} options={{title:'Pantalla de Inicio'}}/>
         <Stack.Screen name='PantallaJuego' component={PantallaJuego} options={{title:'Pantalla del Juego'}}/>
         <Stack.Screen name='PantallaAyuda' component={PantallaAyuda} options={{title:'Pantalla de Ayuda'}}/>

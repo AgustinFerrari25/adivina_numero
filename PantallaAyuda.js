@@ -22,9 +22,6 @@ const PantallaAyuda = () => {
             <Text style={styles.text}>
                 <Text style={styles.bullet}>• Regular:</Text> Número es correcto pero está en la posición incorrecta.
             </Text>
-            <Text style={styles.text}>
-                <Text style={styles.subtitle}>Ejemplo:</Text>
-            </Text>
             <Text style={styles.title}>Ejemplo de Juego</Text>
             <Text style={styles.text}>
                 Número secreto: 7382 {"\n"}
@@ -47,13 +44,14 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 10,
         color: '#F59237',
-        textAlign: 'center',
+        marginLeft: 10
     },
     text: {
         fontSize: 15,
         marginBottom: 15,
         color: '#333',
         textAlign: 'justify',
+        marginLeft: 10
     },
     subtitle: {
         fontWeight: 'bold',
